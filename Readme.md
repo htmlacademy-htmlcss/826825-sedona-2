@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Бернгарт](https://up.htmlacademy.ru/htmlcss-individual/2/user/826825).
-* Наставник: `Неизвестно`.
+* Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
