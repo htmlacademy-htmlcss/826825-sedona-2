@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="" alt="Логотип">
+        <a class="page-header__logo logo"><img src="#" alt="Логотип"></a>
         <ul class="navigation-list">
           <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Главная</a>
+            <a href="#" class="navigation-list__link navigation-list__link--active">Главная</a>
           </li>
           <li class="navigation-list__item">
             <a href="#" class="navigation-list__link">О Седоне</a>
@@ -24,10 +24,10 @@
             <a href="#" class="user-menu__search"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-menu__item">
-            <button type="button" class="user-menu__like"><span>12</span></button>
+            <a class="user-menu__like" href="#"><span>12</span></a>
           </li>
           <li class="user-menu__item">
-            <a href="#" class="user-menu__wish"><span>Хочу Сюда!</span></a>
+            <a href="#" class="button"><span>Хочу Сюда!</span></a>
           </li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
     <main class="main-index">
       <section class="main-index__greetings">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="" alt="текст - приветствие Седоны">
+        <img src="#" alt="текст - приветствие Седоны">
       </section>
       <section class="main-index__advantages advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -45,7 +45,7 @@
           <li class="advantages__list-item">
             <h3>Настоящий городок</h3>
             <P>Седона — не аттракцион для туристов, там течёт своя жизнь</P>
-            <img src="" alt="Жилой дом на фоне каньона Седоны">
+            <img src="#" alt="Жилой дом на фоне каньона Седоны">
           </li>
           <li class="advantages__list-item">
             <h3>Небольшая площадь</h3>
@@ -62,7 +62,7 @@
           <li class="advantages__list-item">
             <h3>Там есть мост дьявола</h3>
             <P>Да, по нему можно пройти! Если вы осмелитесь, разумеется</P>
-            <img src="" alt="Жилой дом на фоне каньона Седоны">
+            <img src="#" alt="Жилой дом на фоне каньона Седоны">
           </li>
         </ul>
       </section>
@@ -89,9 +89,12 @@
         <h2 class="visually-hidden">Подбор Гостиницы</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск Гостиницы в Седоне</button>
+        <button class="button" type="button">Поиск Гостиницы в Седоне</button>
       </section>
-      <section class="main-index__newsletter newsletter">
+    </main>
+    <footer class="page-footer footer">
+      <section class="footer__newsletter newsletter">
+        <h2 class="visually-hidden">Рассылка</h2>
         <p>Подпишитесь на рассылку</p>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -100,8 +103,6 @@
           <button class="button newsletter__button" type="submit">Подписаться</button>
         </form>
       </section>
-    </main>
-    <footer class="page-footer footer">
       <section class="footer__social">
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer__social-list social-list">
@@ -129,35 +130,36 @@
         </address>
       </section>
       <p class="html-link">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="" alt="ссылка на .html academy"></a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="#" alt="ссылка на .html academy">
+        </a>
       </p>
     </footer>
     <section class="index-popup">
       <h2>Поиск гостиницы в Седоне</h2>
       <button class="index-popup__button" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <form class="index-popup__form popup__form" action="">
+      <form class="index-popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="check-in">Дата заезда:</label>
-        <input type="date" id="check-in" name="check-in" placeholder="DD.MM.YYYY">
+        <input class="popup-form__feld" type="date" id="check-in" name="check-in">
         <label for="check-out">Дата выезда:</label>
-        <input type="date" id="check-out" name="check-out" placeholder="DD.MM.YYYY">
+        <input class="popup-form__feld" type="date" id="check-out" name="check-out">
         <label for="adults-number">Взрослые</label>
-        <input type="number" id="adults-number" name="adults-number">
-        <label for="children-number">Дети
-          <span class="index-popup__tooltip tooltip">
-            <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label-date">
-              <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)">
-                 <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                </g>
-              </svg>
-            </button>
-            <span class="tooltip__text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
-              которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-          </span>
-        </label>
-        <input type="number" id="children-number" name="children-number">
-        <button type="submit"></button>
+        <input class="popup-form__feld popup-form__feld--nuber" type="number" id="adults-number" name="adults-number">
+        <label for="children-number">Дети</label>
+        <span class="popup-form__tooltip tooltip">
+          <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label-date">
+            <svg class="tooltip__icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)">
+               <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+              </g>
+            </svg>
+          </button>
+          <span class="tooltip__text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
+            которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
+        <input class="popup-form__feld popup-form__feld--nuber" type="number" id="children-number" name="children-number">
+        <button class="button" type="submit">Найти</button>
       </form>
     </section>
   </body>
