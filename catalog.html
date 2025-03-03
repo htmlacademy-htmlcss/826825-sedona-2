@@ -92,22 +92,24 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter__group price-filter">
+            <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Стоимость, ₽:</legend>
-              <div class="price-filter__felds">
-                <label for="price-min">От</label>
-                <input type="number" id="price-min" name="price-min" placeholder="0">
-                <label for="price-max">До</label>
-                <input type="number" id="price-max" name="price-max" placeholder="9000">
-              </div>
-              <div class="price-filter__range range">
-                <button type="button" class="range__toggle range__toggle--min">
-                  <span class="visually-hidden">От</span>
-                </button>
-                <div class="range__scale"></div>
-                <button type="button" class="range__toggle range__toggle--min">
-                  <span class="visually-hidden">До</span>
-                </button>
+              <div class="price-filter">
+                <div class="price-filter__felds">
+                  <label class="price-min">От <input type="number" value="0"></label>
+                  <label class="price-max">До <input type="number" value="9000"></label>
+                </div>
+                <div class="price-filter__range range">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <button type="button" class="range__toggle range__toggle--min">
+                    <span class="visually-hidden">От</span>
+                  </button>
+                  <button type="button" class="range__toggle range__toggle--min">
+                    <span class="visually-hidden">До</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
             <div class="catalog-filter__buttons">
