@@ -33,6 +33,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <!--Фильтр-->
       <header class="inner-header">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -114,12 +115,29 @@
             </fieldset>
             <div class="catalog-filter__buttons">
               <button type="submit" class="button button--blue">Применить</button>
-              <button type="reset" class="catalog-filter__buttons-reset">Сбросить</button>
+              <button type="reset" class="button catalog-filter__buttons-reset button--transparent">Сбросить</button>
             </div>
 
           </form>
         </section>
       </header>
+      <!--Элементы кталога-->
+      <section class="inner-catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <div class="inner-catalog__sorting sorting">
+          <p class="sorting__result">Найдено гостиниц: <span>38</span></p>
+          <select class="sorting__select" size="1" name="sort">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <div class="toggle-panel">
+            <a href="catalog.html?view=tile" class="toggle-panel__button"><span class="visually-hidden">tile</span></a>
+            <a href="catalog.html?view=card" class="toggle-panel__button"><span class="visually-hidden">card</span></a>
+            <a href="catalog.html?view=list" class="toggle-panel__button"><span class="visually-hidden">list</span></a>
+          </div>
+        </div>
+
+      </section>
     </main>
     <footer class="page-footer footer footer--catalog">
       <section class="footer__newsletter newsletter">
