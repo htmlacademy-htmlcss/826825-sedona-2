@@ -129,14 +129,114 @@
           <select class="sorting__select" size="1" name="sort">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярное</option>
           </select>
           <div class="toggle-panel">
-            <a href="catalog.html?view=tile" class="toggle-panel__button"><span class="visually-hidden">tile</span></a>
-            <a href="catalog.html?view=card" class="toggle-panel__button"><span class="visually-hidden">card</span></a>
-            <a href="catalog.html?view=list" class="toggle-panel__button"><span class="visually-hidden">list</span></a>
+            <a href="#" class="toggle-panel__button toggle-panel__button--tile"><span class="visually-hidden">tile</span></a>
+            <a href="#" class="toggle-panel__button toggle-panel__button--card"><span class="visually-hidden">card</span></a>
+            <a href="#" class="toggle-panel__button toggle-panel__button--list"><span class="visually-hidden">list</span></a>
           </div>
         </div>
-
+        <ul class="inner-catalog__catalog catalog">
+          <li class="catalog__product-card product-card">
+            <h3 class="product-card__title">Amara Resort & Spa</h3>
+            <img src="#" alt="Фотография вида гостиницы Amara Resort & Spa">
+            <div class="product-card__housing-type">
+              <span>Гостиница</span></div>
+            <div class="product-card__housing-minprice">
+              <span>От 4000 Р</span>
+            </div>
+            <a class="product-card__button button" href="#">Подробнее</a>
+            <button class="product-card__button button button--blue">в избранное</button>
+            <div class="product-card__star-rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+            <div class="product-card__rating-total">
+              <span>Рейтинг: 8,5</span>
+            </div>
+          </li>
+          <li class="catalog__product-card product-card">
+            <h3 class="product-card__title">Villas at Poco Diablo</h3>
+            <img src="#" alt="Фотография вида гостиницы Villas at Poco Diablo">
+            <div class="product-card__housing-type">
+              <span>Гостиница</span></div>
+            <div class="product-card__housing-minprice">
+              <span>От 5000 Р</span>
+            </div>
+            <a class="product-card__button button" href="#">Подробнее</a>
+            <button class="product-card__button button button--blue">в избранное</button>
+            <div class="product-card__star-rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+            <div class="product-card__rating-total">
+              <span>Рейтинг: 9,2</span>
+            </div>
+          </li>
+          <li class="catalog__product-card product-card">
+            <h3 class="product-card__title">Desert Quail Inn</h3>
+            <img src="#" alt="Фотография вида гостиницы Desert Quail Inn">
+            <div class="product-card__housing-type">
+              <span>Гостиница</span></div>
+            <div class="product-card__housing-minprice">
+              <span>От 2500 Р</span>
+            </div>
+            <a class="product-card__button button" href="#">Подробнее</a>
+            <button class="product-card__button button button--blue">в избранное</button>
+            <div class="product-card__star-rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+            <div class="product-card__rating-total">
+              <span>Рейтинг: 6,9</span>
+            </div>
+          </li>
+          <li class="catalog__product-card product-card">
+            <h3 class="product-card__title">GreenTree Inn</h3>
+            <img src="#" alt="Фотография вида гостиницы GreenTree Inn">
+            <div class="product-card__housing-type">
+              <span>Гостиница</span></div>
+            <div class="product-card__housing-minprice">
+              <span>От 1500 Р</span>
+            </div>
+            <a class="product-card__button button" href="#">Подробнее</a>
+            <button class="product-card__button button button--blue">в избранное</button>
+            <div class="product-card__star-rating">
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+            <div class="product-card__rating-total">
+              <span>Рейтинг: 5,0</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="inner-catalog__pagination pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <span class="pagination__ellipsis">...</span>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">10</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer footer footer--catalog">
@@ -147,7 +247,7 @@
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
           <input class="newsletter__field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button newsletter__button" type="submit">Подписаться</button>
+          <button class="button newsletter__button button--blue" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer__social">
