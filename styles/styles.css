@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-300.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.button--blue {
+  background-color: #82B3D3;
+}
+
+.page-header .navigation-list__link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
