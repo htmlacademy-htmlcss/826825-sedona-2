@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-300.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -24,11 +24,35 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 .button {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+
   color: #ffffff;
   background-color: #756157;
 }
@@ -37,10 +61,200 @@ body {
   background-color: #82B3D3;
 }
 
+.button--transparent {
+  background-color: transparent;
+}
+
+.button--checked {
+  background-color: #7DB54F;
+}
+
+.page-header .navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .page-header .navigation-list__link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
   color: #000000;
+}
+
+.main-index__greetings {
+  background-color: #DEECF5;
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages .advantages__title,
+.offers .offers__title,
+.hotel-selection .hotel-selection__title,
+.newsletter .newsletter__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages .advantages__legend,
+.offers .offers__legend,
+.hotel-selection .hotel-selection__legend,
+.newsletter .newsletter__legend {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__list-item h3,
+.offers__list-item h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages__list-item p,
+.offers__list-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inner-header {
+  background-color: #82B3D3;
+  background-image: url("../img/filter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.catalog-filter__title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-list__item .control {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.sorting .sorting__result {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.sorting .sorting__select {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.inner-catalog .catalog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog .product-card__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog .product-card__housing-type,
+.catalog .product-card__housing-minprice {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog .product-card__rating-total {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.newsletter:not(.footer--catalog .newsletter) {
+  background-color: #88A4B6;
+  background-image: url("../img/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.footer .newsletter__title:not(.footer--catalog .newsletter__title),
+.footer .newsletter__legend:not(.footer--catalog .newsletter__legend) {
+  color: #ffffff;
+}
+
+.footer__contacts-phone a {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  color: #000000;
+}
+
+.index-popup {
+  display: none;
 }
