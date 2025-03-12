@@ -81,7 +81,6 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-style: normal;
   color: #000000;
 }
 
@@ -120,8 +119,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.advantages__list-item h3,
-.offers__list-item h3 {
+.advantages__list-item .advantages__list-title,
+.offers__list-item .offers__list-title {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -130,8 +129,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.advantages__list-item p,
-.offers__list-item p {
+.advantages__list-item .advantages__list-legend,
+.offers__list-item .offers__list-legend {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -153,7 +152,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.inner-header h1 {
+.inner-header__title {
   margin: 0;
   padding: 0;
   font-size: 60px;
@@ -252,6 +251,10 @@ input[type="radio"].visually-hidden {
 .footer .newsletter__title:not(.footer--catalog .newsletter__title),
 .footer .newsletter__legend:not(.footer--catalog .newsletter__legend) {
   color: #ffffff;
+}
+
+.social-list__link svg {
+  fill: #83B3D3;
 }
 
 .footer__contacts-phone a {
