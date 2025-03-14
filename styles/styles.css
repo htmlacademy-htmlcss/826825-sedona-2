@@ -14,14 +14,30 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* временно для стилей */
+  outline: 0.5px solid red;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   font-style: normal;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 img {
@@ -42,6 +58,12 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 } */
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 
 .button {
   padding: 0;
@@ -71,19 +93,41 @@ input[type="radio"].visually-hidden {
 
 /* Хедер */
 
-.page-header .navigation-list {
+.page-header {
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.page-header .navigation-list__link {
+.navigation-list__link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
 }
 
+.user-menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
 /* main Index */
 
 .main-index__greetings {
