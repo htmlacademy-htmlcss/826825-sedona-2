@@ -401,12 +401,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-/* footer */
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .newsletter {
   display: flex;
@@ -426,20 +420,23 @@ input[type="radio"].visually-hidden {
   margin-bottom: 54px;
 }
 
-.newsletter:not(.footer--catalog .newsletter) {
+.newsletter:not(.main-inner__newsletter) {
   background-color: #88A4B6;
   background-image: url("../img/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.footer .newsletter__title:not(.footer--catalog .newsletter__title),
-.footer .newsletter__legend:not(.footer--catalog .newsletter__legend) {
+.newsletter__title:not(.main-inner__newsletter .newsletter__title),
+.newsletter__legend:not(.main-inner__newsletter .newsletter__legend) {
   color: #ffffff;
 }
 
-.social-list__link svg {
-  fill: #83B3D3;
+/* footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-list {
@@ -451,8 +448,12 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
   background-color: #ffffff;
-/* временно для стилей */
+  /* временно для стилей */
   min-height: 120px;
+}
+
+.social-list__link svg {
+  fill: #83B3D3;
 }
 
 .footer__contacts-phone {
