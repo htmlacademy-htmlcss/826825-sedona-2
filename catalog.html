@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-container">
       <nav class="navigation">
         <a class="page-header__logo logo" href="index.html"><img src="img/logo.svg" width="140" height="70" alt="Логотип"></a>
         <ul class="navigation-list">
@@ -36,7 +36,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner main-container">
+    <main class="main-inner main-container page-container">
       <!--Фильтр-->
       <section class="inner-catalog">
         <div class="inner-catalog__header inner-header">
@@ -247,9 +247,7 @@
           </li>
         </ol>
       </section>
-    </main>
-    <footer class="page-footer footer footer--catalog page-container">
-      <section class="footer__newsletter newsletter">
+      <section class="main-inner__newsletter newsletter">
         <h2 class="visually-hidden">Рассылка</h2>
         <p class="newsletter__title">Подпишитесь на рассылку</p>
         <p class="newsletter__legend">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -260,6 +258,8 @@
           <button class="button newsletter__button button--blue" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+    <footer class="page-footer footer footer--catalog page-container">
       <section class="footer__social">
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer__social-list social-list">
