@@ -18,7 +18,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* временно для стилей */
+  /* временно для сетки */
   outline: 0.5px solid red;
 }
 
@@ -94,6 +94,7 @@ img {
 
 /* Хедер */
 
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -102,13 +103,13 @@ img {
   width: 100%;
   background-color: #ffffff;
 
-  /* воеменно для стилей */
+  /* воеменно для сетки */
   margin-bottom: -6px;
 }
 
 .page-header__logo {
-  display: block;
-  margin-right: 30px;
+  position: relative;
+  margin-right: 45px;
   width: 140px;
   height: 70px;
 }
@@ -126,11 +127,19 @@ img {
   list-style: none;
 }
 
+.navigation-list__item {
+  margin-right: 32px;
+}
+
 .navigation-list__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-decoration: none;
 }
 
 .user-menu {
@@ -146,6 +155,7 @@ img {
 .main-container {
   flex-grow: 1;
 }
+
 /* main Index */
 
 .main-index__greetings {
@@ -304,7 +314,7 @@ img {
   padding-bottom: 96px;
 
   background-color: #ffffff;
-  /* временно для стилей */
+  /* временно для сетки */
   min-height: 406px;
 }
 
@@ -323,7 +333,7 @@ img {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  /* временно для стилей */
+  /* временно для сетки */
   min-height: 412px;
 }
 
@@ -388,7 +398,7 @@ img {
   padding-bottom: 40px;
   background-color: #ffffff;
 
-  /* временно для стилей */
+  /* временно для сетки */
   min-height: 140px;
 }
 
@@ -541,7 +551,7 @@ img {
 
   background-color: #ffffff;
 
-  /* временно для стилей */
+  /* временно для сетки */
   min-height: 414px;
 }
 
