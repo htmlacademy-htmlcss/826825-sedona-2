@@ -20,7 +20,7 @@
               <a href="index.html" class="navigation-list__link">Главная</a>
             </li>
             <li class="navigation-list__item">
-              <a href="#" class="navigation-list__link navigation-list__link--active">О Седоне</a>
+              <a href="#" class="navigation-list__link">О Седоне</a>
           </li>
             <li class="navigation-list__item">
               <a href="#" class="navigation-list__link navigation-list__link--active" aria-current="page">Гостиницы</a>
@@ -51,8 +51,10 @@
           <div class="inner-catalog__header inner-header">
             <h1 class="inner-header__title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              <li class="breadcrumbs__item breadcrumbs__item--home">
+                <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" aria-current="page">Гостиницы</a>
@@ -261,9 +263,8 @@
           <p class="newsletter__title">Подпишитесь на рассылку</p>
           <p class="newsletter__legend">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email
-              <input class="newsletter__field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
-            </label>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="newsletter__field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
             <button class="button newsletter__button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
