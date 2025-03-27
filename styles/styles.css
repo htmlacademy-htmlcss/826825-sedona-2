@@ -434,9 +434,11 @@ input[type="radio"].visually-hidden {
 
 /* footer */
 
-.footer {
+.footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  background-color: #ffffff;
 }
 
 .social-list {
