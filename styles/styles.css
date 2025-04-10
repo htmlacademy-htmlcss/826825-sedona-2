@@ -1128,8 +1128,9 @@ img {
   margin-right: 8px;
 }
 
-.pagination__link {
+.footer {
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -1190,15 +1191,15 @@ img {
   margin-bottom: 55px;
 }
 
-.newsletter:not(.main-inner__newsletter) {
+.newsletter:not(.footer--catalog .newsletter) {
   background-color: #88A4B6;
   background-image: url("../img/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.newsletter__title:not(.main-inner__newsletter .newsletter__title),
-.newsletter__legend:not(.main-inner__newsletter .newsletter__legend) {
+.footer .newsletter__title:not(.footer--catalog .newsletter__title),
+.footer .newsletter__legend:not(.footer--catalog .newsletter__legend) {
   color: #ffffff;
 }
 
@@ -1268,18 +1269,8 @@ img {
 
   list-style: none;
   background-color: #ffffff;
-}
-
-.social-list__item {
-  flex-grow: 1;
-}
-
-.social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
+/* временно для стилей */
+  min-height: 120px;
 }
 
 .social-list__link svg {
