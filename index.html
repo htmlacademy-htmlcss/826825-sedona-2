@@ -118,7 +118,7 @@
           <p class="newsletter__legend">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="newsletter__field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
+            <input class="newsletter__field" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
             <button class="button newsletter__button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
@@ -176,17 +176,23 @@
           <button class="popup__close-button" type="reset"><span class="visually-hidden">Закрыть</span></button>
           <label class="popup__feld-label" for="check-in">
             <span class="label-text">Дата заезда:</span>
-            <input class="popup__feld" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
+            <input class="popup__feld" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020" required>
             <p class="popup__message popup__message--invalid">Мы не можем отправить вас в прошлое.</p>
           </label>
           <label class="popup__feld-label" for="check-out">
             <span class="label-text">Дата выезда:</span>
-            <input class="popup__feld" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023">
+            <input class="popup__feld" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023" required>
             <p class="popup__message">На эти даты есть свободные номера. Пока есть.</p>
           </label>
           <label class="popup__feld-label popup__feld-adults" for="adults-number">
             <span class="label-text">Взрослые</span>
-            <input class="popup__feld popup__feld--number" type="number" id="adults-number" name="adults-number" value="2">
+            <button class="toggle-count toggle-count__down" type="button">
+              <span class="visually-hidden">Уменьшить количество людей</span>
+            </button>
+            <input class="popup__feld popup__feld--number" type="number" id="adults-number" name="adults-number" value="2" required>
+            <button class="toggle-count toggle-count__up" type="button">
+              <span class="visually-hidden">Увеличить количество людей</span>
+            </button>
           </label>
           <label class="popup__feld-label popup__feld-children " for="children-number">
             <span class="label-text">Дети</span>
@@ -203,7 +209,13 @@
                 которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
             </span>
-            <input class="popup__feld popup__feld--number" type="number" id="children-number" name="children-number" value="2">
+            <button class="toggle-count toggle-count__down" type="button">
+              <span class="visually-hidden">Уменьшить количество людей</span>
+            </button>
+            <input class="popup__feld popup__feld--number" type="number" id="children-number" name="children-number" value="2" required>
+            <button class="toggle-count toggle-count__up" type="button">
+              <span class="visually-hidden">Увеличить количество людей</span>
+            </button>
           </label>
           <button class="button button--blue" type="submit">Найти</button>
         </form>
