@@ -174,49 +174,52 @@
         <h2 class="popup__search-title">Поиск гостиницы в Седоне</h2>
         <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
           <button class="popup__close-button" type="reset"><span class="visually-hidden">Закрыть</span></button>
-          <label class="popup__feld-label" for="check-in">
+          <label class="popup__feld-label popup__feld-date" for="check-in">
             <span class="label-text">Дата заезда:</span>
-            <input class="popup__feld" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020" required>
-            <p class="popup__message popup__message--invalid">Мы не можем отправить вас в прошлое.</p>
+            <input class="popup__feld" type="text" id="check-in" name="check-in" placeholder="Укажите дату" value="27 апреля 2020" autofocus required>
+            <span class="popup__message popup__message--invalid">
+              Мы не можем отправить вас в прошлое.
+            </span>
           </label>
-          <label class="popup__feld-label" for="check-out">
+          <label class="popup__feld-label popup__feld-date" for="check-out">
             <span class="label-text">Дата выезда:</span>
-            <input class="popup__feld" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023" required>
-            <p class="popup__message">На эти даты есть свободные номера. Пока есть.</p>
+            <input class="popup__feld" type="text" id="check-out" name="check-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+            <span class="popup__message">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
           </label>
-          <label class="popup__feld-label popup__feld-adults" for="adults-number">
-            <span class="label-text">Взрослые</span>
-            <button class="toggle-count toggle-count__down" type="button">
+          <div class="popup__feld-count">
+            <label class="popup__feld-label" for="adults-number">
+              <span class="label-text">Взрослые:</span>
+            </label>
+            <button class="toggle-count toggle-count--down" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
             <input class="popup__feld popup__feld--number" type="number" id="adults-number" name="adults-number" value="2" required>
-            <button class="toggle-count toggle-count__up" type="button">
+            <button class="toggle-count toggle-count--up" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
-          </label>
-          <label class="popup__feld-label popup__feld-children " for="children-number">
-            <span class="label-text">Дети</span>
+          </div>
+          <div class="popup__feld-count">
+            <label class="popup__feld-label" for="children-number">
+              <span class="label-text">Дети:</span>
+            </label>
             <span class="tooltip">
               <button class="tooltip__toggle" type="button">
-                <svg class="tooltip__icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
-                   <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                  </g>
-                </svg>
+                <span class="visually-hidden">Подсказка</span>
               </button>
               <span class="tooltip__text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
                 которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
             </span>
-            <button class="toggle-count toggle-count__down" type="button">
+            <button class="toggle-count toggle-count--down" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
             <input class="popup__feld popup__feld--number" type="number" id="children-number" name="children-number" value="2" required>
-            <button class="toggle-count toggle-count__up" type="button">
+            <button class="toggle-count toggle-count--up" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
-          </label>
+          </div>
           <button class="button button--blue" type="submit">Найти</button>
         </form>
       </section>
