@@ -72,6 +72,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: rgba(255, 255, 255, 1);
 
   border: none;
@@ -288,7 +289,10 @@ img {
 
 .user-menu__item--buttom {
   padding-top: 14px;
+  padding-bottom: 14px;
   margin-left: 20px;
+  width: 160px;
+  word-wrap: break-word;
 }
 
 .main-container {
